@@ -1,2 +1,5 @@
 # parsing-study
-about parsing
+about parsing from kurs
+# Author
+Kalinin Stepan
+
