@@ -1,6 +1,14 @@
 import requests
+import fake_useragent
+from bs4 import BeautifulSoup
 
-link = 'https://icanhazip.com/'
-responce = requests.get(link).text
+s = requests.Session()
+data = {"login_username":"stepan@onepk.ru", "login_password":""}
 
-responce = requests.get(link).content
+url = 'https://stepik.org/learn?auth=login'
+
+r = s.post(url, data=data)
+
+print(s.cookies)
+
+print(r)
