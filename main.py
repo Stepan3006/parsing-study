@@ -23,7 +23,7 @@ fake_username = random.choice(symbols) + str(fake.random.randint(10000000,100000
 
 print(f'{fake_name} {fake_password} {fake_email} {fake_username}')
 
-url = 'https://knigavuhe.org/register/'
+url = ''
 
 user_agent_val = fake_user
 
@@ -39,7 +39,7 @@ session.headers.update({'User-Agent':user_agent_val})
 _xsrf = session.cookies.get('_xsrf', domain=".org")
 
 post_request = session.post(url, {
-     'backUrl': 'https://knigavuhe.org/',
+     'backUrl': '',
      'name': fake_name,
      'surname': fake_name,
      'username': fake_username,
